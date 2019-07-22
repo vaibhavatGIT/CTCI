@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DeletingNode",
+            "request": "launch",
+            "mainClass": "DeletingNode",
+            "projectName": "CTCI_72d6da90"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FindMiddle",
             "request": "launch",
             "mainClass": "FindMiddle"
