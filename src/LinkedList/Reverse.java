@@ -1,3 +1,6 @@
+
+import java.util.*;
+
 class Reverse {
     Node head;
 
@@ -39,6 +42,21 @@ class Reverse {
         return head;
     }
 
+    public void printReverse() {
+        Node temp = head;
+        Stack<Node> stack = new Stack<Node>();
+        while (temp != null) {
+            stack.push(temp);
+            temp = temp.next;
+        }
+
+        while (stack.size() > 0) {
+            System.out.print(stack.peek().data + " ");
+            stack.pop();
+        }
+
+    }
+
     public static void main(String[] args) {
         Reverse r = new Reverse();
         r.push(1);
@@ -47,8 +65,9 @@ class Reverse {
         r.push(4);
         r.push(5);
         r.printNode();
-        r.inplaceRev();
-        r.printNode();
+        // r.inplaceRev();
+        r.printReverse();
+        // r.printNode();
 
     }
 
